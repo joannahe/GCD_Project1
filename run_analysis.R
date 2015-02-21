@@ -35,4 +35,4 @@ train.df <- make.df (train)
 joint.df <- rbind(test.df, train.df)
 output.df <- joint.df[,c(features.of.interest$V2, "activity"), with=F]
 
-write.table(output.df, 'uci_har_mean_std.txt')
+write.table(output.df, 'uci_har_mean_std.txt', row.name=FALSE)
